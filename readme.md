@@ -8,14 +8,41 @@
 `composer require amirali-bagheri/enamad-scrape`
 
 ## Usage
-Write a few lines about the usage of this package.
 
-## Testing
-Run the tests with:
+### __Check Has Enamad__
 
-``` bash
-vendor/bin/phpunit
 ```
+$enamad = new \Enamad('domain.ir');
+
+return $enamad->hasEnamad(); //bool
+
+```
+
+### __Get Information__
+
+```
+$enamad = new \Enamad('domain.ir');
+
+return $enamad->get(); //array of data
+```
+
+### __Get Is Expired__
+
+```
+$enamad = new \Enamad('domain.ir');
+
+return $enamad->get();
+```
+
+[comment]: <> (## Testing)
+
+[comment]: <> (Run the tests with:)
+
+[comment]: <> (``` bash)
+
+[comment]: <> (vendor/bin/phpunit)
+
+[comment]: <> (```)
 
 ## Changelog
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
@@ -29,7 +56,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 - [All Contributors](https://github.com/amirali-bagheri/enamad-scrape/contributors)
 
 ## Security
-If you discover any security-related issues, please email bagheriamirali2000@gmail.com instead of using the issue tracker.
+If you discover any security-related issues, please contact me.
 
 ## License
 The MIT License (MIT). Please see [License File](/LICENSE.md) for more information.
