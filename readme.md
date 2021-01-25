@@ -26,23 +26,26 @@ $enamad = new \Enamad('domain.ir');
 return $enamad->get(); //array of data
 ```
 
+|     Value     |     Type      |      Description      |
+| ------------- | ------------- | ----------------------|
+|     name      |    string     |     Manager Name      |
+|   start_date  |      date     |    Date of Sign Up    |
+|  expire_date  |    string     |    Date of Expire     |
+|    address    |    string     |        Address        |
+|     phone     |       int     |     Phone Number      |
+|     email     |    string     |     Email Address     |
+|   work_time   |    string     |      Working Time     |
+|    history    |    string     |   Business History    |
+|     star      |      int      |      Star Rating      |
+
+
 ### __Get Is Expired__
 
 ```
 $enamad = new \Enamad('domain.ir');
 
-return $enamad->get();
+return $enamad->isExpired(); //bool
 ```
-
-[comment]: <> (## Testing)
-
-[comment]: <> (Run the tests with:)
-
-[comment]: <> (``` bash)
-
-[comment]: <> (vendor/bin/phpunit)
-
-[comment]: <> (```)
 
 ## Changelog
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
