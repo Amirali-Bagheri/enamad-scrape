@@ -1,0 +1,46 @@
+{
+    "name": "amirali-bagheri/enamad-scrape",
+    "description": "Get Information of Domain with enamad.ir",
+    "type": "package",
+    "license": "MIT",
+    "keywords": ["laravel","enamad.ir","scrape"],
+    "authors": [
+        {
+            "name": "Amirali Bagheri",
+            "email": "bagheriamirali2000@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^7.0|^8.0",
+        "fabpot/goutte": "^4.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "hekmatinasser/verta": "^1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "AmiraliBagheri\\EnamadScrape\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AmiraliBagheri\\EnamadScrape\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AmiraliBagheri\\EnamadScrape\\EnamadScrapeServiceProvider"
+            ],
+            "aliases": {
+                "Enamad": "AmiraliBagheri\\EnamadScrape\\Facades\\Enamad"
+            }
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "orchestra/testbench": "^6.0"
+    }
+}
